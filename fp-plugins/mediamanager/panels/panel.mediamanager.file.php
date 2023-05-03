@@ -240,7 +240,7 @@ class admin_uploader_mediamanager extends AdminPanelAction {
 
 	function onsubmit($data = NULL) {
 		if (isset($_POST ['mm-newgallery'])) {
-			$newgallery = strip_tags($_POST ['mm-newgallery-name']);
+			$newgallery = wp_specialchars(strip_tags($_POST ['mm-newgallery-name']));
 			if ($newgallery == "") {
 				$this->smarty->assign('success', -3);
 				return 2;
