@@ -139,9 +139,9 @@ class admin_config_default extends AdminPanelActionValidated {
 
 		$fp_config ['locale'] = array(
 			'timeoffset' => $_POST ['timeoffset'],
-			'timeformat' => wp_specialchars(($_POST ['timeformat'])),
-			'dateformat' => wp_specialchars(($_POST ['dateformat'])),
-			'dateformatshort' => wp_specialchars(($_POST ['dateformatshort'])),
+			'timeformat' => wp_specialchars($_POST ['timeformat']),
+			'dateformat' => wp_specialchars($_POST ['dateformat']),
+			'dateformatshort' => wp_specialchars($_POST ['dateformatshort']),
 			'charset' => $_POST ['charset'],
 			'lang' => $_POST ['lang']
 		);
